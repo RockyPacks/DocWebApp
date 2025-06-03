@@ -1,0 +1,46 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.fade-in {
+    animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.section-collapse .rotate-180 {
+    transform: rotate(180deg);
+}
+
+#patient-modal, #followup-modal {
+    transition: opacity 0.3s ease-in-out;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f9fafb;
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+    color: #6b7280;
+}
+
+tbody tr:hover {
+    background-color: #f3f4f6;
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5);
+}
